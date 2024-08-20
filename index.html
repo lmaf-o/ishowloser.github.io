@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <title>THE BIGGEST LOSER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@coderecon is a bitch.">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(0,0,0);
+            position: relative;
+        }
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .about {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+            display: none;
+        }
+        .info {
+            background-color: black;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border-color: white;
+            border-width: 3px;
+            border-style: solid;
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+        }
+        .disclaimer {
+            font-size: 12.5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <img src="/web/20240607172150im_/https://ishowloser.site/recon.png">
+        <button class="info" onclick="about()">?</button>
+    </div>
+    <div class="about">
+        <p>Who is @coderecon</p>
+        <p>@coderecon is a bitch who harasses people on discord and puts them on a site called ishowlosers.site.</p>
+        <br>
+        <p>He bitches about being a moderator on .gg/ishowspeed and .gg/mcspeed.</p>
+        <p>He got cooked by a old granny called Amy nickname Nacho Mama.</p>
+        <p>He had an ip grabber that would send people's ip addresses to a discord webhook on his site. luckily it didn't work as the api he was using to grab the ips needed an api key which he didn't have. a result of being a github skid.</p>
+    </div>
+<script>
+function about() {
+    var aboutdiv = document.querySelector('.about');
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+    if (aboutdiv.style.display === 'none' || aboutdiv.style.display === '') {
+        aboutdiv.style.display = 'block';
+    } else {
+        aboutdiv.style.display = 'none';
+    }
+}
+</script>
 </html>
-
